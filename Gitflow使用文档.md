@@ -32,6 +32,9 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 $ brew install git-flow-avh
 ~~~
 
+
+
+
 > 更多的 ***Git-flow*** 安装指引，请阅读 [Git-flow wiki](https://github.com/petervanderdoes/gitflow-avh/wiki/Installing-on-Mac-OS-X)
 
 ### 初始化
