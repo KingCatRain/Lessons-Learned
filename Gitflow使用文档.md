@@ -14,6 +14,14 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 * 也可以 [点击这里下载](https://git-scm.com/download/mac/)，并安装！
 
+## brew 安装
+
+如果机器没有 ***brew*** 可以执行下边代码安装，也可以阅读[官网文档](http://brew.sh/index_zh-cn.html)
+
+~~~
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+~~~
+
 ## Git-flow安装及使用
 
 ### 基础建议
