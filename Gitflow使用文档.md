@@ -14,13 +14,40 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 * 也可以 [点击这里下载](https://git-scm.com/download/mac/)，并安装！
 
-## brew 安装
+## Brew 安装
 
 如果机器没有 ***brew*** 可以执行下边代码安装，也可以阅读[官网文档](http://brew.sh/index_zh-cn.html)
 
 ~~~
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ~~~
+
+## 生成SSH密钥
+
+生成 ***Git SSH KEY*** 对提高频繁操作 ***git*** 有提高效率的好处，如何生成：
+
+### 设置Git的user name和email：
+
+~~~
+$ git config --global user.name "name"
+$ git config --global user.email "name@mail.com"
+~~~
+
+### 生成SSH密钥：
+
+1. 查看是否已经有了 ***ssh*** 密钥：`cd ~/.ssh` 如果没有密钥则不会有此文件夹，有则备份删除。
+
+2. 生成密钥：
+
+~~~
+ssh-keygen -t rsa -C "name@mail.com"
+~~~
+
+按三个回车密码为空，最后得到了两个文件：***id_rsa*** 和 ***id_rsa.pub***
+
+3. 添加密钥到 ***ssh：ssh-add*** 文件名，需要之前输入密码。
+
+4. 在github上添加ssh密钥，这要添加的是 ***id_rsa.pub*** 里面的公钥。复制公钥出来，然后登录 ***Git*** 网站，添加SSH。
 
 ## Git-flow安装及使用
 
