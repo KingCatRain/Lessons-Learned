@@ -45,9 +45,7 @@ ssh-keygen -t rsa -C "name@mail.com"
 
 按三个回车密码为空，最后得到了两个文件：***id_rsa*** 和 ***id_rsa.pub***
 
-3. 添加密钥到 ***ssh：ssh-add*** 文件名，需要之前输入密码。
-
-4. 在github上添加ssh密钥，这要添加的是 ***id_rsa.pub*** 里面的公钥。复制公钥出来，然后登录 ***Git*** 网站，添加SSH。
+3. 在github上添加ssh密钥，这要添加的是 ***id_rsa.pub*** 里面的公钥。复制公钥出来，然后登录 ***Git*** 网站，添加SSH。
 
 ## Git-flow安装及使用
 
