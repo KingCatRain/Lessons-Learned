@@ -125,3 +125,27 @@ $ deactivate
 ## 起服务
 
 在 ***venv*** 下，运行 `python manage.py runserver`
+
+## MySQL
+
+起服务：
+
+~~~
+mysql.server start
+~~~
+
+退出sql
+
+~~~
+exit;
+~~~
+
+关闭sqlserver
+
+找到mysqld 所在管道
+
+~~~
+ps aux | grep mysql
+
+kill -15 管道号
+~~~

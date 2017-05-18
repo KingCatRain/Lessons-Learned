@@ -153,6 +153,14 @@ $ git flow hotfix start VERSION [BASENAME]
 $ git flow hotfix finish VERSION
 ~~~
 
+### merge
+
+从develop分支，merge到当前分支
+
+~~~
+$ git merge develop 
+~~~
+
 ## 更多详细信息请参考
 
 * [Git 使用文档](http://www.cnblogs.com/goody9807/p/4372477.html)
