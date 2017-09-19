@@ -74,7 +74,7 @@ Quit the server with CONTROL-C.
 通过 ***pip*** 安装 ***virtualenv*** ：
 
 ~~~
-$ pip install virtualenv
+$ sudo pip install virtualenv
 ~~~
 
 ### 基本使用
@@ -83,7 +83,7 @@ $ pip install virtualenv
 
 ~~~
 $ cd my_project_folder
-$ virtualenv
+$ virtualenv venv
 ~~~
 
 `virtualenv venv` 将会在当前目录创建一个文件夹，包含了 ***Python*** 可执行文件，以及 ***pip*** 库的一个拷贝，这样就能安装其他包了。虚拟的环境名字（此例中的是venv）可以是任意的，若省略名字会把文件均放在当前目录。
@@ -105,6 +105,12 @@ $ source venv/bin/activate
 ~~~
 
 当前虚拟环境的名字会显示在提示符左侧（比如说（venv）你的电脑：你的工程 用户名 $）以让你知道它是激活的。从现在起，任何你使用 ***pip*** 安装的包将会放在 `venv` 文件夹中，与全局安装的 ***Python*** 隔绝开。
+
+在venv里安装 django
+
+~~~
+$ pip install django
+~~~
 
 像平常一样安装包，比如：
 
@@ -128,16 +134,22 @@ $ deactivate
 
 ## MySQL
 
+### 安装MySQL
+
+~~~
+$ brew install mysql-connector-c
+~~~
+
 起服务：
 
 ~~~
-mysql.server start
+$ mysql.server start
 ~~~
 
 退出sql
 
 ~~~
-exit;
+$ exit;
 ~~~
 
 关闭sqlserver
@@ -145,7 +157,7 @@ exit;
 找到mysqld 所在管道
 
 ~~~
-ps aux | grep mysql
+$ ps aux | grep mysql
 
-kill -15 管道号
+$ kill -15 管道号
 ~~~
